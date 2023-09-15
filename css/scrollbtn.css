@@ -1,0 +1,28 @@
+#scrollbtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+}
+
+.scroll-top {
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    transition: 0.5s ease;
+}
+.scroll-top:hover {
+    border-radius: 50%;
+    background-color: #f34444;
+}
+
+.scroll-top i {
+    color: white;
+    font-size: 35px;
+}
+
+

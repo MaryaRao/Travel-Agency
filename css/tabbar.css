@@ -1,0 +1,60 @@
+/* <- Desktop Tab Bar CSS -> */
+#tab_bar1 {
+    background: white;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: fit-content;
+}
+.fun-content {
+    margin: 0px 30px;
+}
+
+#mobileTab {
+    margin-top: -150px !important;
+    z-index: 1000 !important;
+}
+
+#mobileTab form {
+    background: #fff !important;
+    padding: 20px 10px !important;
+    border: 0px;
+}
+
+#mobileTab h3 {
+    color: #f34444 !important;
+    background: fff !important;
+}
+
+#mobileTab button {
+    margin-top: 20px;
+}
+
+#tab_btn {
+    border: 2px solid #f34444;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    display: block;
+    margin: 0px auto;
+    width: 250px;
+    transition: 0.3s ease;
+}
+#tab_btn:hover {
+    color: white;
+    background-color: #f34444;
+    font-weight: 600;
+}
+
+@media(max-width:767px) {
+    #desktopTab {
+        display: none !important;
+    }
+}
+
+@media(min-width:767px) {
+    #mobileTab {
+        display: none !important;
+    }
+}

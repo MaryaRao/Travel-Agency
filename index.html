@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS LINK  -->
+  <link rel="stylesheet" href="./css/navbarFooter.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/tabbar.css">
+  <link rel="stylesheet" href="./css/loader.css">
+  <link rel="stylesheet" href="./css/scrollbtn.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
+
+  <!-- Jquery Link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- AOS ANIMATION -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <title>HOME</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,700&display=swap');
+    .lets-go-card {
+            height: 550px;
+    }
+    @media screen and (max-width: 400px) {
+        .lets-go-card {
+            height: 655px;
+        }
+    }
+      .tabs .tab {
+    font-size: 15px;
+    font-weight: 550;
+    font-family: sans-serif;
+    color: #f34444;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 0px;
+    background: #fff;
+    }
+  .tabs .tab:hover {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 550px) {
+    .tabs .tab {
+      font-size: 12px;
+      padding: 10px 10px;
+    }
+  }
+
+  </style>
+</head>
+
+
+<body>
+  <!-- Scroll Top Button  -->
+  <a href="#header" id="scrollbtn">
+    <div class="scroll-top">
+      <span><i class="fa-solid fa-circle-arrow-up"></i></span>
+    </div>
+  </a>
+
+  <!-- <...Header Start...>  -->
+  <header class="header" id="header">
+    <div class="left">
+      <span style="border-right: 1px solid gainsboro;"><a href="mailto:abc@gmail.com" class="signin">
+      <i class="fa fa-envelope fa-bounce" style="color: #f34444;"></i> Travel Agency@gmail.com</a></span>
+      <span style="border-right: 1px solid gainsboro;"><a href="tel:090078601" class="signin">
+      <i class="fa fa-phone fa-shake" style="color: #f34444;"></i>&nbsp; 0900 786 01</a></span>
+      <span><a href="https://goo.gl/maps/MkTaRpcWMG5gzh8G6" class="signin" id="map"><i class="fa fa-location fa-spin" style="color: #f34444;"></i> Karachi, Sindh, Pakistan</a></span>
+    </div>
+    <div class="right">
+      <span style="border-right: 1px solid gainsboro;"><a href="https://www.facebook.com/login.php" class="signin fb">
+      <i class="fa fa-facebook"></i></a></span>
+      <span style="border-right: 1px solid gainsboro;"><a href="https://www.instagram.com/" class="signin inst">
+      <i class="fa fa-instagram"></i></a></span>
+      <span><a href="https://twitter.com/i/flow/login" class="signin tw"><i class="fa fa-twitter"></i></a></span>
+    </div>
+  </header>
+  <!-- <...Header End...> -->
+
+  <!-- <...Navbar Start...>  -->
+  <nav class="navbar">
+    <div class="wrapper">
+      <input type="radio" name="slide" id="menu-btn">
+      <input type="radio" name="slide" id="cancel-btn">
+      <!-- <- LOGO ->  -->
+      <span class="logo">
+        <img src="./media/Tour 1 (2).png" alt="Loading">
+      </span>
+      <!-- <- Navbar Links -> -->
+      <ul class="nav-links">
+        <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times" style="color: white;"></i></label>
+        <li><a href="index.html" class="desk-items active">HOME</a></li>
+        <a href="index.html"><label class="mob-items active">HOME</label></a>
+        <li><a href="./html Files/contactus.html" class="desk-items">CONTACT US</a></li>
+        <a href="./html Files/contactus.html"><label class="mob-items">CONTACT US</label></a>
+        <li><a href="./html Files/destinations.html" class="desk-items">DESTINATIONS</a></li>
+        <a href="./html Files/destinations.html"><label class="mob-items active">DESTINATIONS</label></a>
+        <li><a href="./html Files/flight.html" class="desk-items">RESERVATIONS</a></li> 
+        <a href="./html Files/flight.html"><label class="mob-items">RESERVATIONS</label></a>
+        <li class="sep" style="color: black;">|</li>
+        <!-- <- Resgiter ->  -->
+        <li><a href="./html Files/signup.html" class="desk-items">SIGN IN <i
+              class="fa-solid fa-right-to-bracket"></i></a></li>
+        <a href="./html Files/signup.html"><label class="mob-items">SIGN IN <i class="fa-solid fa-right-to-bracket"></i></label></a>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <!-- <-... Navbar End ...-> -->
+
+
+<!-- <-... Carousel Start ...->  -->
+<style>
+/* <...Carousel CSS Start...>  */
+.carousel1 {
+    background: url(./media/dest-banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    top: -25px;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.carousel1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.caro-content h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 33;
+}
+   @media(min-width:576px){
+    #letsgoDesktop{
+      display: block !important;
+    }
+   
+}
+</style>
+<div class="carousel1">
+  <div class="caro-content">
+  </div>
+</div>
+<!-- <-... Carousel End ...-> -->
+ <!-- <- Tab Bar Start -> -->
+    <div class="container tab-container" id="desktopTab">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 fun-content leftcontent" data-aos="fade-right">
+                <h3 style="color: #f34444;">About Travel Agency</h3>
+                <h1 style="color: rgb(49, 49, 49);margin-top: 30px;">We're truly Dedicated To Make Your Travel Experience As Much As Simple And Fun
+                    As Possible </h1>
+                <p>Travel Agency is the ultimate travel agency website that takes you on unforgettable adventures. Explore the world with our expertly crafted itineraries. Discover hidden gems, indulge in local cuisines, and make lifelong memories.Whether you're solo traveller or with loved ones, Travel Agency has the perfect package for you. Lets embark on a journey together!</p>
+            </div>
+            <div class="col-md-5 col-sm-12 fun-content right-content" id="tab_bar1"
+                style="position: relative;top: -75px;" data-aos="fade-left">
+                <h3 style="text-align: center;color:#f34444">Find A Place</h3>
+                <form class="row g-3" style="padding: 10px;" action="./html Files/flight.html">
+                    <div class="col-md-6 ui-widget">
+                        <label for=""><i class="fa-solid fa-plane-departure"
+                                style="--fa-animation-direction: reverse;color:#f34444;"></i> From Where</label>
+                        <div class="inputs">
+                            <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Your Location" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ui-widget" id="destinationInput">
+                        <label for=""><i class="fa-solid fa-plane-arrival" style="color: #f34444;"></i> Where To</label>
+                        <div class="inputs">
+                            <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Enter Your Destination" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label"><i class="fa-solid fa-calendar-days" style="color: #f34444;"></i> Check In</label>
+                        <input type="text" class="form-control" id="datePicker" placeholder="Select a date" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label"><i class="fa-solid fa-calendar-days"
+                                style="color: #f34444;"></i> Check Out</label>
+                        <input type="text" class="form-control" id="datePickerOut" placeholder="Select a date" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label"><i class="fa-solid fa-person"
+                                style="color: #f34444;"></i><span> Adult</span></label>
+                        <select id="inputState" class="form-select" required>
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label"><i class="fa-solid fa-child"
+                                style="color: #f34444;"></i> <span>Children</span></label>
+                        <select id="inputState" class="form-select" required>
+                            <option selected>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn" id="tab_btn">Search Flight</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <- Tab Bar END -> -->
+
+    <!-- MOBILE TAB STARTS HERE -->
+    <div class="container mobile_container" id="mobileTab" data-aos="fade-left">
+        <form action="./html Files/flight.html" style="border: 1px solid rgb(49, 49, 49);border-radius: 20px !important;">
+            <h3
+                style="color: #fff;background: #f34444;border-top-right-radius: 20px;border-top-left-radius: 20px;text-align: center;">
+                Find A Place</h3>
+            <div class="row">
+                <div class="col-sm-6 ui-widget">
+                    <label for=""><i class="fa-solid fa-plane-departure"
+                            style="--fa-animation-direction: reverse;color:#f34444;"></i> from Where</label>
+                    <div class="inputs">
+                        <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                        <input type="text" class="form-control" id="location1" placeholder="Enter Your Location" required>
+                    </div>
+                </div>
+                <div class="col-sm-6 ui-widget" id="destinationInput">
+                    <label for=""><i class="fa-solid fa-plane-arrival" style="color: #f34444;"></i> Where To</label>
+                    <div class="inputs">
+                        <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                        <input type="text" class="form-control" id="destination1" placeholder="Enter Your Destination" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="inputEmail4" class="form-label"><i class="fa-solid fa-calendar-days"
+                            style="color: #f34444;"></i> Check In</label>
+                    <input type="text" class="form-control" id="datePicker" placeholder="Select a date" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputEmail4" class="form-label"><i class="fa-solid fa-calendar-days"
+                            style="color: #f34444;"></i> Check Out</label>
+                    <input type="text" class="form-control" id="datePickerOut" placeholder="Select a date" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label"><i class="fa-solid fa-person"
+                        style="color: #f34444;"></i><span> Adult</span></label>
+                <select id="inputState" class="form-select" required>
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputState" class="form-label"><i class="fa-solid fa-child" style="color: #f34444;"></i>
+                    <span>Children</span></label>
+                <select id="inputState" class="form-select" required>
+                    <option selected>0</option>
+                            <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn" id="tab_btn">Search Flight</button>
+            </div>
+        </form>
+        <div class="container mobile-text" data-aos="fade-right" style="margin: 20px 0px; padding: 0px 10px;">
+            <div class="row">
+                <h3 style="color: #f34444;">About Travel Agency</h3>
+                <h1 style="color: rgb(49, 49, 49);">We're truly Dedicated To Make Your Travel Experience As Much As Simple And Fun
+                    As Possible </h1>
+                <p>Travel Agency is the ultimate travel agency website that takes you on unforgettable adventures. Explore the world with our expertly crafted itineraries. Discover hidden gems, indulge in local cuisines, and make lifelong memories.Whether you're solo traveller or with loved ones, Travel Agency has the perfect package for you. Lets embark on a journey together!</p>
+            </div>
+        </div>
+    </div>
+    <!-- MOBILE TAB ENDS HERE -->
+
+  <!-- Gallery -->
+  <div class="container explore-container div" style="margin-top: 100px;">
+    <div class="row">
+      <h2 class="text-left heading" data-aos="fade-left" id="before">Strat Planning Your <span style="color: #f34444;">Next Trip</span></h2>
+      <style>
+        #before::before {
+          width: 130px;
+          margin: 0 170px;
+        }
+      </style>
+      <p class="text-left" data-aos="fade-right" style="margin-bottom: 30px;font-size: 20px;">Thinking of travelling somewhere soon? Here are some options to help
+      you get started.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 explore-image" style="border-radius: 20px;">
+        <div class="item" data-aos="fade-right">
+          <div class="image-container" style="position: relative;height: 400px;">
+            <img src="./media/index_explore1-transformed.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"
+              height="400px" />
+            <div class="image-text" style="width: 100%;">
+              <p class="p1">Explore</p>
+              <a href="./html Files/explore.html">Explore our destinations <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 explore-image">
+        <div class="item" data-aos="fade-left">
+          <div class="image-container" style="position: relative;height: 400px;">
+            <img src="./media/index_hotel.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"
+              height="400px" style="object-fit: cover;" />
+            <div class="image-text" style="width: 100%;">
+              <p class="p1">Explore Hotels</p>
+              <a href="./html Files/hotel.html">Book your package <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-4 mb-lg-0 explore-image">
+        <div class="item" data-aos="fade-up">
+          <div class="image-container" style="position: relative;height: 180px;background: transparent;">
+            <img src="./media/explore3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea"
+              height="180px" />
+            <div class="image-text" style="width: 100%;">
+              <p class="p1">Travel Requirements</p>
+              <a href="./html Files/travelrequirement.html">Find out more <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div><br>
+        <div class="item" data-aos="fade-left">
+          <div class="image-container" style="position: relative;height: 180px; background-color: #fff;border-radius: 20px !important;">
+            <img src="./media/explore4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"
+              height="180px" style="object-fit: cover;" />
+            <div class="image-text" style="width: 100%;">
+              <p class="p1">Elevate Your Experience</p>
+              <a href="./html Files/elevate.html">Explore add-ons <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+
+  <!-- POPULAR ATTRACTION STARTS HERE -->
+  <div class="container popular-container div" style="margin-top: 100px;">
+    <div class="row">
+      <h2 class="text-left heading" data-aos="fade-left" id="before2">
+      Popular <span style="color: #f34444;">Attractions</span></h2>
+      <style>
+        #before2:before {
+          width: 100px;
+            margin: 0 100px;
+        }
+      </style>
+    </div>
+    <table class="table-responsive table popular" data-aos="fade-up">
+      <td><button type="submit" id="dubai-buttons" style="font-family: sans-serif; font-weight: 600;">Dubai</button></td>
+      <td><button type="submit" id="bangkok-buttons" style="font-family: sans-serif; font-weight: 600;">Bangkok</button></td>
+      <td><button type="submit" id="tokyo-buttons" style="font-family: sans-serif; font-weight: 600;">Tokyo</button></td>
+      <td><button type="submit" id="paris-buttons" style="font-family: sans-serif; font-weight: 600;">Paris</button></td>
+      <td><button type="submit" id="azerbaijan-buttons" style="font-family: sans-serif; font-weight: 600;">Azerbaijan</button></td>
+      <!-- <td><button type="submit">Los Angeles</button></td> -->
+    </table>
+
+    <div class="row popular-cards" id="dubai" data-aos="fade-up">
+      <!-- Card 1 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/burj al-khalifa.jpg" alt="" width="100%" height="100%" style="cursor:pointer"
+          onclick="openModalDubai(1)">
+        <div class="card-content">
+          <h4 class="card-h4">Burj Al-Khalifa</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(10,000 reviews)</span></p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/palm-island_dubai1.jpeg" alt="" width="100%" height="100%" style="cursor:pointer"
+          onclick="openModalDubai(2)">
+        <div class="card-content">
+          <h4 class="card-h4">Palm Island</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(4567 reviews)</span></p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/The Dubai Fountain.JPG" alt="" width="100%" height="100%" style="cursor:pointer"
+          onclick="openModalDubai(3)">
+        <div class="card-content">
+          <h4 class="card-h4">The Dubai Fountain</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(7619 reviews)</span></p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/dubai desert.webp" alt="" width="100%" height="100%" style="cursor:pointer"
+          onclick="openModalDubai(4)">
+        <div class="card-content">
+          <h4 class="card-h4">The Dubai Desert</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(6093 reviews)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <img class="mySlides" src="./media/burj al-khalifa.jpg" style="width:100%;">
+        <img class="mySlides" src="./media/palm-island_dubai1.jpeg" style="width:100%">
+        <img class="mySlides" src="./media/The Dubai Fountain.JPG" style="width:100%">
+        <img class="mySlides" src="./media/dubai desert.webp" style="width:100%">
+        <a class="w3-btn-floating" style="position:absolute;top:45%;
+          background: transparent;left:0" onclick="plusDivsDubai(-1)">❮</a>
+        <a class="w3-btn-floating" style="position:absolute;top:45%;background: transparent;right:0"
+          onclick="plusDivsDubai(1)">❯</a>
+        <div class="close">
+          <span class="w3-closebtn w3-hover-transparent w3-container w3-padding-16 w3-display-topright"
+            onclick="closeModalDubai()">&times;</span>
+        </div>
+      </div>
+    </div>
+    <!-- BANGKOK DIV -->
+    <!-- BANGKOK DIV -->
+    <div class="row popular-cards" id="bangkok" style="display: none;">
+      <!-- Card 5 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/mahankon sky walk.jpg" alt="mahanakon sky walk" width="100%" height="100%"
+          style="cursor:pointer" onclick="openModalBangkok(1)">
+        <div class="card-content">
+          <h4 class="card-h4">Mahanakhon Sky Walk</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(469 reviews)</span></p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/the grand palace.jpg" alt="" width="100%" height="100%" style="cursor:pointer"
+          onclick="openModalBangkok(2)">
+        <div class="card-content">
+          <h4 class="card-h4">The Grand Palace</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(7975 reviews)</span></p>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/sea life,bangkok.jpg" alt="" width="100%" height="100%" style="cursor:pointer"
+          onclick="openModalBangkok(3)">
+        <div class="card-content">
+          <h4 class="card-h4">Ocean World</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(5179 reviews)</span></p>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-md-3 card-div">
+        <img src="./media/wat-arun_bangkok.jpg" alt="" width="100%" height="100%" style="cursor:pointer"
+          onclick="openModalBangkok(4)">
+        <div class="card-content">
+          <h4 class="card-h4">Wat Arun</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(6901 reviews)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- THE MODAL BANGKOK -->
+    <div id="modal02" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <img class="mySlides1" src="./media/mahankon sky walk.jpg" style="width:100%">
+        <img class="mySlides1" src="./media/the grand palace.jpg" style="width:100%">
+        <img class="mySlides1" src="./media/sea life,bangkok.jpg" style="width:100%">
+        <img class="mySlides1" src="./media/wat-arun_bangkok.jpg" style="width:100%">
+        <a class="w3-btn-floating" style="position:absolute;top:45%;
+      background: transparent;left:0" onclick="plusDivsBangkok(-1)">❮</a>
+        <a class="w3-btn-floating" style="position:absolute;top:45%;background: transparent;right:0"
+          onclick="plusDivsBangkok(1)">❯</a>
+        <div class="close">
+          <span class="w3-closebtn w3-hover-transparent w3-container w3-padding-16 w3-display-topright"
+            onclick="closeModalBangkok()">&times;</span>
+        </div>
+      </div>
+    </div>
+    <!-- TOKYO DIV STARTS HERE -->
+
+    <div class="row popular-cards" id="tokyo" style="display: none;">
+      <div class="col-md-3 card-div">
+        <img src="./media/disney land,tokyo.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalTokyo(1)">
+        <div class="card-content">
+          <h4 class="card-h4">Disney Land</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(10,000 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/DisneySea.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalTokyo(2)">
+        <div class="card-content">
+          <h4 class="card-h4">Disney Sea</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(4567 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/senso ji.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalTokyo(3)">
+        <div class="card-content">
+          <h4 class="card-h4">Senso ji</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(7619 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/rainbow bridge,tokyo.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalTokyo(4)">
+        <div class="card-content">
+          <h4 class="card-h4">Rainbow Bridge</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(6093 reviews)</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal TOKYO -->
+    <div id="modal03" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <img class="mySlides2" src="./media/disney land,tokyo.jpg" style="width:100%">
+        <img class="mySlides2" src="./media/DisneySea.jpg" style="width:100%">
+        <img class="mySlides2" src="./media/senso ji.jpg" style="width:100%">
+        <img class="mySlides2" src="./media/rainbow bridge,tokyo.jpg" style="width:100%">
+        <a class="w3-btn-floating" style="position:absolute;top:45%;
+      background: transparent;left:0" onclick="plusDivsTokyo(-1)">❮</a>
+        <a class="w3-btn-floating" style="position:absolute;top:45%;background: transparent;right:0"
+          onclick="plusDivsTokyo(1)">❯</a>
+        <div class="close">
+          <span class="w3-closebtn w3-hover-transparent w3-container w3-padding-16 w3-display-topright"
+            onclick="closeModalTokyo()">&times;</span>
+        </div>
+      </div>
+    </div>
+    <!-- PARIS DIV -->
+    <div class="row popular-cards" id="paris" style="display: none !important;">
+      <div class="col-md-3 card-div">
+        <img src="./media/eiffel tower, paris.webp" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalParis(1)">
+        <div class="card-content">
+          <h4 class="card-h4">Eiffel Tower</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(10,000 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/Luxembourg Gardens, paris.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalParis(2)">
+        <div class="card-content">
+          <h4 class="card-h4">Luxembourg Gardens</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(4567 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/Louvre Museum,paris.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalParis(3)">
+        <div class="card-content">
+          <h4 class="card-h4">Louvre Museum</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(7619 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/Champs-+ëlys+¬es,paris.png" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalParis(4)">
+        <div class="card-content">
+          <h4 class="card-h4">Champs-Élysées</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(6093 reviews)</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal Paris -->
+    <div id="modal04" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <img class="mySlides3" src="./media/eiffel tower, paris.webp" style="width:100%">
+        <img class="mySlides3" src="./media/Luxembourg Gardens, paris.jpg" style="width:100%">
+        <img class="mySlides3" src="./media/Louvre Museum,paris.jpg" style="width:100%">
+        <img class="mySlides3" src="./media/Champs-Élysées,paris.png" style="width:100%">
+        <a class="w3-btn-floating" style="position:absolute;top:45%;
+      background: transparent;left:0" onclick="plusDivsParis(-1)">❮</a>
+        <a class="w3-btn-floating" style="position:absolute;top:45%;background: transparent;right:0"
+          onclick="plusDivsParis(1)">❯</a>
+        <div class="close">
+          <span class="w3-closebtn w3-hover-transparent w3-container w3-padding-16 w3-display-topright"
+            onclick="closeModalParis()">&times;</span>
+        </div>
+      </div>
+    </div>
+    <!-- AZERBAIJAN -->
+    <div class="row popular-cards" id="azerbaijan" style="display: none;">
+      <div class="col-md-3 card-div">
+        <img src="./media/Baku azerbaijan.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalAzerbaijan(1)">
+        <div class="card-content">
+          <h4 class="card-h4">Baku</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(10,000 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/gobustan mud volcanoes, azerbaijan.jpg" alt="" width="100%" height="100%"
+          style="cursor: pointer;" onclick="openModalAzerbaijan(2)">
+        <div class="card-content">
+          <h4 class="card-h4">Mud volcanoes</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(4567 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/Shirvanshahs_Palace,azerbaijan.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalAzerbaijan(3)">
+        <div class="card-content">
+          <h4 class="card-h4">Shrivanshah's Palace</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(7619 reviews)</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 card-div">
+        <img src="./media/Baku azerbaijan.jpg" alt="" width="100%" height="100%" style="cursor: pointer;"
+          onclick="openModalAzerbaijan(4)">
+        <div class="card-content">
+          <h4 class="card-h4">Bibi-Heybat Mosque</h4>
+          <p class="card-p"><b>4.8/5</b> <span>(6093 reviews)</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal Azerbaijan -->
+    <div id="modal05" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <img class="mySlides4" src="./media/Baku azerbaijan.jpg" style="width:100%">
+        <img class="mySlides4" src="./media/gobustan mud volcanoes, azerbaijan.jpg" style="width:100%">
+        <img class="mySlides4" src="./media/Shirvanshahs_Palace,azerbaijan.jpg" style="width:100%">
+        <img class="mySlides4" src="./media/Baku azerbaijan.jpg" style="width:100%">
+        <a class="w3-btn-floating" style="position:absolute;top:45%;
+      background: transparent;left:0" onclick="plusDivsAzerbaijan(-1)">❮</a>
+        <a class="w3-btn-floating" style="position:absolute;top:45%;background: transparent;right:0"
+          onclick="plusDivsAzerbaijan(1)">❯</a>
+        <div class="close">
+          <span class="w3-closebtn w3-hover-transparent w3-container w3-padding-16 w3-display-topright"
+            onclick="closeModalAzerbaijan()">&times;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- PRIVILIGE CLUB DIV -->
+
+
+  <div class="tabs div" data-aos="fade-right"  style="margin-top: 100px;">
+    <button class="tab privilegeTab" onclick="openTab(event, 'tab-1')">Privilege Club</button>
+    <button class="tab cashTab" onclick="openTab(event, 'tab-2')">Cash + Avios</button>
+    <button class="tab mobileTab" onclick="openTab(event, 'tab-3')">Mobile App</button>
+    <button class="tab studentTab" onclick="openTab(event, 'tab-4')">Student Club</button>
+  </div>
+
+  <div class="tab-content" id="tab-1" data-aos="fade-up" style="margin-top: 20px;">
+    <div class="container Privilegecontainer">
+      <div class="row PrivilegeRow">
+        <div class="col-md-4" data-aos="fade-right">
+          <div class="card privilegeCard">
+            <img src="" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Join Privilege Club</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptatem
+                repudiandae soluta, ullam esse quisquam temporibus ipsam eius nulla ea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="tab-2" data-aos="fade-left" style="display: none;">
+    <div class="container Privilegecontainer">
+      <div class="row PrivilegeRow">
+        <div class="col-md-4">
+          <div class="card privilegeCard">
+            <img src="" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Explore the world with Cash + Avios</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptatem
+                repudiandae soluta, ullam esse quisquam temporibus ipsam eius nulla ea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" data-aos="fade-right" id="tab-3" style="display: none;">
+    <div class="container Privilegecontainer">
+      <div class="row PrivilegeRow">
+        <div class="col-md-4">
+          <div class="card privilegeCard">
+            <img src="" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Get More on our mobile app</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptatem
+              repudiandae soluta, ullam esse quisquam temporibus ipsam eius nulla ea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" data-aos="fade-left" id="tab-4" style="display: none;">
+    <div class="container Privilegecontainer">
+      <div class="row PrivilegeRow">
+        <div class="col-md-4">
+          <div class="card privilegeCard">
+            <img src="" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Student Club</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus voluptatem
+                repudiandae soluta, ullam esse quisquam temporibus ipsam eius nulla ea.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
+  <!-- POPULAR ATTRACTION ENDS HERE -->
+
+  <!-- lets GO STRATS HERE-->
+  <div class="container lets-go-container div"  style="margin-top: 100px;">
+    <div class="row lets-go-row" data-aos="fade-right">
+      <h2 class="text-left heading" data-aos="fade-left" id="before">Let's go places
+      <span style="color: #f34444;">Together</span></h2>
+      <style>
+        #before::before {
+          width: 100px;
+          margin: 0 150px;
+        }
+      </style>
+      <p class="text-left" data-aos="fade-right" style="margin-bottom: 30px;font-size: 20px;">Discover the latest offers 
+      and news and start planning your next trip with us.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 " style="border-radius: 20px; height: 100%;">
+
+        <div class="card lets-go-card" data-aos="fade-right">
+          <img src="./media/des1.jpg" alt="" style="height: 80% !important;">
+          <div class="card-body" style="height: 20% !important;">
+            <h5 class="card-title">Explore stunning </h5>
+            <p class="card-text">Travel to Maldives with Travel Agency and enjoy delicious cuisines, colorful festivals,
+              architecture.</p>
+            <a href="./html Files/inner2.html" class="btn">Learn more <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4" id="letsgoDesktop" style="height: 550px;">
+        <div class="card lets-go-card-right" data-aos="fade-left">
+          <div class="row g-0">
+            <div class="col-md-4"
+              style="background-image: url(./media/sharjah\,lets-go.jpg);background-repeat: no-repeat; background-size: cover;background-position: center;height: 160px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sharjah</h5>
+                <p class="card-text">Discover a city where the exotic,the ancient, and the contemporary sit...</p>
+                <a href="./html Files/inner.html" class="btn">Learn more <i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4 lets-go-card-right" data-aos="fade-left">
+          <div class="row g-0">
+            <div class="col-md-4"
+              style="background-image: url(./media/airplane\,lets-go.jpg);background-position: center;background-size: cover;height: 160px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">A thrilling partnership</h5>
+                <p class="card-text">Travel Agency and Formula 1r, driven to perfection Best Business class for...</p>
+                <a href="./html Files/partner.html" class="btn">Learn more <i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4 lets-go-card-right"  data-aos="fade-left">
+            
+          <div class="row g-0">
+            <div class="col-md-4"
+              style="background-image: url(./media/explore-banner.jpg);background-position: center;background-size: cover;height: 160px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Experience award winning excellence</h5>
+                <p class="card-text">We are honoured to be recognized as the World's Best Business class for...</p>
+                <a href="./html Files/award.html" class="btn">View our awards<i class="fa fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- LETS GO ENDS HERE -->
+
+
+<!-- Subscribe Card Start -->
+<section class="subscribe">
+  <div class="subs-container">
+    <h2 class="subs-head" data-aos="fade-right">Never Miss An Offer!</h2>
+    <p class="subs-text" data-aos="fade-left">Subscribe and be the first to receive our exclusive offers.</p>
+    <div class="subs-form" data-aos="fade-right">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" name="email" placeholder="Enter Your Email...." />
+        <button class="subs-btn" data-aos="fade-left" style="transition: 0.3s; right: -20px;">SUBSCRIBE</button>
+    </div>
+  </div>
+</section>
+<!-- Subscribe Card End -->
+
+<!-- Footer Start  -->
+<footer class="footer" style="margin-top: 100px;">
+  <div class="row">
+      <div class="col" id="col1">
+        <img src="./media/Tour 1 (2).png" alt="Travel Agency!">
+        <style>
+         #col1 p {
+             font-size: 12px;
+             font-weight: 500;
+         }
+     </style>
+      <p>Travel Agency is the ultimate travel agency website that takes you on unforgettable adventures. Explore the world with our expertly crafted itineraries. Discover hidden gems, indulge in local cuisines, and make lifelong memories.Whether you're solo traveller or with loved ones, Travel Agency has the perfect package for you. Lets embark on a journey together!</p>
+      </div>
+      <div class="col" id="col2">
+        <h2>Office<div class="underline"><span></span></h2>
+      <ul>
+          <li><i class="fa-solid fa-location-dot" style="margin-top: 10px;"></i> Garden City Block/A</li>
+          <li><i class="fa-solid fa-map-location-dot"></i> Karachi, PAKISTAN</li>
+          <li><i class="fa-solid fa-envelope"></i> Travel Agency@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> 0900 786 01</li>
+      </ul>
+      </div>
+      <div class="col" id="col3">
+        <h2>Links<div class="underline"><span></span></h2>
+        <ul>
+          <li><a href="/index.html"><i class="fa-solid fa-arrow-right" style="margin-top: 10px;"></i> Home</a></li>
+          <li><a href="./html Files/contactus.html"><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+          <li><a href="./html Files/destinations.html"><i class="fa-solid fa-arrow-right"></i> Destination</a></li>
+          <li><a href="./html Files/flight.html"><i class="fa-solid fa-arrow-right"></i> Reservation</a></li>
+      </ul>
+      </div>
+      <div class="col" id="col4">
+        <h2>Destination <div class="underline"><span></span></h2>
+        <div class="images">
+          <div class="row" data-aos="fade-right" style="margin-bottom: 0px;">
+            <img src="./media/des1.jpg" alt="Loading!" class="img-1" />
+            <img src="./media/des2.jpg" alt="Loading!" class="img-2" />
+            <img src="./media/des3.jpg" alt="Loading!" class="img-3" />
+            <img src="./media/des4.jpg" alt="Loading!" class="img-4" />
+            <img src="./media/des5.jpg" alt="Loading!" class="img-5" />
+          </div>
+          <div class="row" data-aos="fade-left">
+            <img src="./media/des6.jpg" alt="Loading!" class="img-6" />
+            <img src="./media/des7.jpg" alt="Loading!" class="img-7" />
+            <img src="./media/des8.jpg" alt="Loading!" class="img-8" />
+            <img src="./media/des9.jpg" alt="Loading!" class="img-9" />
+            <img src="./media/des10.jpg" alt="Loading!" class="img-10" />
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+    <hr style="color: white; border-top: 8px;">
+    <div class="last">
+      <p class="copyright">SOF © 2022 - All Right Reserved</p>
+      <div class="icons">
+        <ul class="wrapper2">
+          <a href="https://www.facebook.com/login/">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fa-brands fa-facebook-f"></i></span>
+            </li>
+          </a>
+          <a href="https://twitter.com/i/flow/login">
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+            </li>
+          </a>
+          <a href="https://www.instagram.com/accounts/login/">
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </li>
+          </a>
+          <a href="https://github.com/login">
+            <li class="icon github">
+              <span class="tooltip">Github</span>
+              <span><i class="fa-brands fa-github"></i></span>
+            </li>
+          </a>
+          <a href="https://www.youtube.com/"></a>
+            <li class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fa-brands fa-youtube"></i></span>
+            </li>
+          </a>
+        </ul>
+      </div>
+  </div>
+  </footer>
+  <!-- <- Footer End -> -->
+
+<!-- Loader Start -->   
+  <div class="loader-wrapper">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+<!-- Loader End -->
+
+<!-- <.------------------------------------------------ // PAGE END \\ ---------------------------------------------.> -->
+
+  <!-- JavaScript Link  -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/javascript.js"></script>
+  <script src="https://kit.fontawesome.com/60229d941c.js" crossorigin="anonymous"></script>
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- TAB BAR -->
+  <!-- jQuery UI JavaScript -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"></script>
+  <!-- AOS ANIMATION -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Typed Js Link  -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- JQUERY AJAX -->
+  <!-- Include Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.js"></script>
+  <!-- google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script>  
+  <script>
+    function Map123() {  
+var mapOptions = {  
+    center:new google.maps.LatLng(51.508742,-0.120850),  
+    zoom: 10,  
+    mapTypeId: google.maps.MapTypeId.HYBRID  
+}  
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+} 
+    AOS.init();
+  // Loader Js --->
+  $(window).on("load", function() {
+    $(".loader-wrapper").fadeOut();
+  });
+  window.addEventListener('load', function () {
+  document.body.style.overflow = 'hidden';
+  setTimeout(function() {
+    document.body.style.overflow = 'auto';
+  }, 2000);
+  });
+ 
+
+    // var typed = new Typed('#element', {
+    // strings: ['DUBAI, <span class="fir">U</span> <span class="sec">. </span>  <span class="thi">A</span> <span class="sec"> .</span><span class="for">E</span>'],
+    // typeSpeed: 100,
+    // });
+     flatpickr("#datePicker", {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      minDate: "today",
+      // Add more options as needed
+    });
+    flatpickr("#datePickerOut", {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      minDate: "today",
+      // Add more options as needed
+    });
+    flatpickr("#datePicker1", {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      minDate: "today",
+      // Add more options as needed
+    });
+    flatpickr("#datePickerOut1", {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      minDate: "today",
+      // Add more options as needed
+    });
+    flatpickr("#datePicker2", {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      minDate: "today",
+      // Add more options as needed
+    });
+    flatpickr("#datePickerOut2", {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+      minDate: "today",
+      // Add more options as needed
+    });
+
+    $(document).ready(function () {
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#location").autocomplete({
+        source: availableTags
+      });
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#destination").autocomplete({
+        source: availableTags
+      });
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#location1").autocomplete({
+        source: availableTags
+      });
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#destination1").autocomplete({
+        source: availableTags
+      });
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#location2").autocomplete({
+        source: availableTags
+      });
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#destination2").autocomplete({
+        source: availableTags
+      });
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#location3").autocomplete({
+        source: availableTags
+      });
+      var availableTags = [
+        "Africa",
+        "America",
+        "Dubai",
+        "India",
+        "Malaysia",
+        "Pakistan",
+        "Canada",
+        "Iraq",
+        "Saudi Arabia",
+        "England",
+        "Paris",
+        "Japan",
+        "germany",
+        "Thailand",
+        "Portugal",
+        "Srilanka",
+        "Turkey",
+        "Italy",
+        "UK",
+        "SwitzerlandAustralia",
+        "Scala",
+        "Netherlands"
+      ];
+
+      $("#destination3").autocomplete({
+        source: availableTags
+      });
+      $("#bangkok-buttons").click(function () {
+        $("#bangkok").show();
+        $("#dubai").hide();
+        $("#tokyo").hide();
+        $("#azerbaijan").hide();
+      });
+
+      $("#dubai-buttons").click(function () {
+        $("#dubai").show();
+        $("#bangkok").hide();
+        $("#tokyo").hide();
+        $("#azerbaijan").hide();
+      });
+      $("#tokyo-buttons").click(function () {
+        $("#tokyo").show();
+        $("#dubai").hide();
+        $("#bangkok").hide();
+        $("#paris").hide();
+        $("#azerbaijan").hide();
+      });
+      $("#paris-buttons").click(function () {
+        $("#paris").show();
+        $("#tokyo").hide();
+        $("#dubai").hide();
+        $("#bangkok").hide();
+        $("#azerbaijan").hide();
+      });
+      $("#azerbaijan-buttons").click(function () {
+        $("#azerbaijan").show();
+        $("#paris").hide();
+        $("#tokyo").hide();
+        $("#dubai").hide();
+        $("#bangkok").hide();
+      });
+    });
+  </script>
+</body>
+</html>

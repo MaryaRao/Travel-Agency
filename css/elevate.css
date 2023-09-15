@@ -1,0 +1,256 @@
+@media(max-width:768px){
+    body{
+        overflow-x:hidden !important;
+    }
+}
+.heading {
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.heading:before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f34444;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right:0;  
+    margin:0 auto;
+    border: none;
+}
+
+.container{
+    margin-top: 80px !important;
+}
+.elevate-card{
+    border-radius: 20px !important;
+    /* box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5); */
+}
+.elevate-card img{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+.btn{
+    border-radius: 20px !important;
+}
+.luxury {
+    background-image: url(../media/airplane\ inner.jpg);
+    height: 300px !important;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    /* margin-top: 80px !important; */
+    border-radius: 20px !important;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5);
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+.luxuryContent {
+    color:  #fff !important;
+    display: flex;
+}
+.extra{
+    display: flex;
+    align-items: center !important;
+}
+.extraCard{
+    border-radius: 20px !important;
+    /* box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5); */
+}
+.extraCard img{
+    border-radius: 20px !important;
+}
+
+.sidebarBaggage {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+
+.sidebarBaggage1 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage1.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn1 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+
+.sidebarBaggage2 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage2.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn2 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+.moreCol{
+    height: 200px;
+}
+.moreCard{
+    position: relative;
+    border-radius: 20px !important;
+    height: 200px;
+}
+.moreCard img{
+    height: 100%;
+    border-radius: 20px !important;
+}
+.moreBody{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    color:  #fff;
+}
+.sidebarBaggage3 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage3.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn3 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+.sidebarBaggage4 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage4.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn4 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+h2{
+    font-weight: 500 !important;
+    position: relative;
+}
+h2::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    background: rgb(49, 49, 49);;
+    height: 3px;
+    border: 1px solid rgb(49, 49, 49);;
+    border-radius: 20px !important;
+    right: 0;
+    bottom: -5px;
+}
+h3{
+    font-weight: 400 !important;
+}
+
+@media screen and (max-width: 770px) {
+    .footer {
+       margin-top: 350px;
+    }
+}
+@media(max-width:576px){
+.col-xs-12{
+    margin-top: 15px !important;
+}
+.col-md-4{
+    margin-top: 15px !important;
+}
+}

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS LINK  -->
+  <link rel="stylesheet" href="../css/navbarFooter.css">
+  <link rel="stylesheet" href="../css/holiday.css">
+  <link rel="stylesheet" href="../css/loader.css">
+  <link rel="stylesheet" href="../css/scrollbtn.css">
+  <!-- Font Awsome Link  -->
+  <!-- <script src="https://kit.fontawesome.com/60229d941c.js" crossorigin="anonymous"></script> -->
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
+  <!-- Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+  <!-- Jquery Link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- AOS ANIMATION -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <title>| Travel Agency | Elevate</title>
+  <link rel="shortcut icon" href="../media/Tour%201%20(2).png" type="image/png" sizes="32x32">
+  <style>
+  body{
+      overflow-x:hidden !important;
+  }
+  @media(max-width:768px){
+    body{
+        overflow-x:hidden !important;
+    }
+}
+.heading {
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.heading:before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f34444;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right:0;  
+    margin:0 auto;
+    border: none;
+}
+
+.container{
+    margin-top: 80px !important;
+}
+.elevate-card{
+    border-radius: 20px !important;
+    /* box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5); */
+}
+.elevate-card img{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+.btn{
+    border-radius: 20px !important;
+}
+.luxury {
+    background-image: url(../media/airplane\ inner.jpg);
+    height: 300px !important;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    /* margin-top: 80px !important; */
+    border-radius: 20px !important;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5);
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+.luxuryContent {
+    color:  #fff !important;
+    display: flex;
+}
+.extra{
+    display: flex;
+    align-items: center !important;
+}
+.extraCard{
+    border-radius: 20px !important;
+    /* box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.5); */
+}
+.extraCard img{
+    border-radius: 20px !important;
+}
+
+.sidebarBaggage {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+
+.sidebarBaggage1 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage1.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn1 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+
+.sidebarBaggage2 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage2.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn2 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+.moreCol{
+    height: 200px;
+}
+.moreCard{
+    position: relative;
+    border-radius: 20px !important;
+    height: 200px;
+}
+.moreCard img{
+    height: 100%;
+    border-radius: 20px !important;
+}
+.moreBody{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    color:  #fff;
+}
+.sidebarBaggage3 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage3.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn3 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+.sidebarBaggage4 {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: -120%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    color: rgb(49, 49, 49);;
+    transition: right .8s ease-in-out !important;
+}
+
+.sidebarBaggage4.active {
+    right: 0 !important;
+}
+
+/* Style for the close button */
+#closeSidebarBtn4 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: transparent !important;
+    border: 0px;
+    box-shadow: none !important;
+    outline:  none !important;
+    z-index: 10;
+}
+h2{
+    font-weight: 500 !important;
+    position: relative;
+}
+h2::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    background: rgb(49, 49, 49);;
+    height: 3px;
+    border: 1px solid rgb(49, 49, 49);;
+    border-radius: 20px !important;
+    right: 0;
+    bottom: -5px;
+}
+h3{
+    font-weight: 400 !important;
+}
+
+@media screen and (max-width: 770px) {
+    .footer {
+       margin-top: 350px;
+    }
+}
+@media(max-width:576px){
+.col-xs-12{
+    margin-top: 15px !important;
+}
+.col-md-4{
+    margin-top: 15px !important;
+}
+}
+  </style>
+</head>
+
+<body style="overflow-x: hidden !important;">
+  <!-- Scroll Top Button  -->
+  <a href="#header" id="scrollbtn">
+    <div class="scroll-top">
+      <span><i class="fa-solid fa-circle-arrow-up"></i></span>
+    </div>
+  </a>
+  
+  <!-- <...Header Start...>  -->
+  <header class="header" id="header">
+    <div class="left">
+      <span style="border-right: 1px solid gainsboro;"><a href="mailto:abc@gmail.com" class="signin"><i
+                  class="fa fa-envelope fa-bounce" style="color: #f34444;"></i>
+              Travel Agency@gmail.com</a></span>
+      <span style="border-right: 1px solid gainsboro;"><a href="tel:090078601" class="signin"><i class="fa fa-phone fa-shake"
+                  style="color: #f34444;"></i>&nbsp;
+              0900 786 01</a></span>
+      <span><a href="https://goo.gl/maps/MkTaRpcWMG5gzh8G6" class="signin"><i class="fa fa-location fa-spin" style="color: #f34444;"></i>
+              Karachi, Sindh, Pakistan</a></span>
+  </div>
+  <div class="right">
+    <span style="border-right: 1px solid gainsboro;"><a href="https://www.facebook.com/login.php" class="signin fb">
+    <i class="fa fa-facebook"></i></a></span>
+    <span style="border-right: 1px solid gainsboro;"><a href="https://www.instagram.com/" class="signin inst">
+    <i class="fa fa-instagram"></i></a></span>
+    <span><a href="https://twitter.com/i/flow/login" class="signin tw"><i class="fa fa-twitter"></i></a></span>
+  </div>
+  </header>
+  <!-- <...Header End...> -->
+
+  <!-- <...Navbar Start...>  -->
+  <nav class="navbar">
+    <div class="wrapper">
+      <input type="radio" name="slide" id="menu-btn">
+      <input type="radio" name="slide" id="cancel-btn">
+      <!-- <- LOGO ->  -->
+      <span class="logo">
+        <img src="../media/Tour 1 (2).png" alt="Loading">
+      </span>
+      <!-- <- Navbar Links -> -->
+      <ul class="nav-links">
+        <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times" style="color: white;"></i></label>
+        <li><a href="../index.html" class="desk-items active">HOME</a></li>
+        <a href="../index.html"><label class="mob-items active">HOME</label></a>
+        <li><a href="../html Files/contactus.html" class="desk-items">CONTACT US</a></li>
+        <a href="../html Files/contactus.html"><label class="mob-items">CONTACT US</label></a>
+        <li><a href="../html Files/destinations.html" class="desk-items">DESTINATIONS</a></li>
+        <a href="../html Files/destinations.html"><label class="mob-items active">DESTINATIONS</label></a>
+        <li><a href="../html Files/flight.html" class="desk-items">RESERVATIONS</a></li>
+        <a href="../html Files/flight.html"><label class="mob-items">RESERVATIONS</label></a>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <!-- <-... Navbar End ...-> -->
+
+
+<!-- <-... Carousel Start ...->  -->
+<style>
+    /* <...Carousel CSS Start...>  */
+    .carousel1 {
+        background: url(../media/explore4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        position: relative;
+        top: -25px;
+        left: 0;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+    }
+    .carousel1::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .caro-content h3 {
+        color: white;
+        font-size: 50px;
+        font-weight: 100;
+        z-index: 2;
+    }
+    .caro-content p{
+        color: #fff;
+        z-index: 2;
+    }
+    </style>
+    <div class="carousel1">
+      <div class="caro-content">
+        <h3>Ready For Your Upcoming<br> Trip With Us?</h3>
+        <p>Elevate your journey and turn it into a truly memorable experience.</p>      
+    </div>
+    </div>
+<!-- <-... Carousel End ...-> -->
+<section class="section">
+  <div class="container elevate-container div" style="margin-top: 100px;">
+    <div class="row">
+      <h2 class="text-center heading" data-aos="fade-left">Your Perfect <span style="color: #f34444;">Seat</span></h2>
+      <h6 class="text-center" data-aos="fade-right" style="margin-bottom: 30px;">Book one or more seat in advance for guaranteed comfort on board.</h6>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12" data-aos="fade-right">
+            <div class="card elevate-card" style="width: 100%;">
+                <img src="../media/reserve1,elevate.jpeg" style="object-fit: cover;" width="100%" height="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Aisle, window, or with a loved one?</h3>
+                  <p class="card-text">Start your journey your way when you choose your seats in advance. Pay for deat selection with cash and enjoy incrdible savings</p>
+                  <a href="../html Files/flight.html" class="btn">Reserve Seats</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" data-aos="fade-left">
+            <div class="card elevate-card" style="width: 100%;">
+                <img src="../media/reserve2-XfOS7CsfJ-transformed.jpeg" style="object-fit: cover;" width="100%" height="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Perhaps three seats, all to yourself?</h3>
+                  <p class="card-text">With Economy Reserve, you have the option to guarantee one or more vacant seats beside you check in online</p>
+                  <a href="/html Files/flight.html" class="btn">Reserve additional seats</a>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+
+<!-- ULTIMATE LUXURY DIV STARTS HERE-->
+<div class="container luxury" data-aos="fade-up">
+  <div class="row luxuryContent">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 luxuryCenter">
+      <h3 class="text-center" data-aos="fade-left" style="width: max-content !important; margin-top: 0px;">
+      Experience <span style="border-bottom: 3px solid #f34444;">ultimate</span> <span style="color: #f34444;">luxury on board</span></h3>
+      <p>Take your journey to the next level and enjoy our award-winning service when you upgrade your flight to Business Class</p>
+      <a href="flight.html" class="btn luxuryBtn" style="padding: 10px 20px !important;color:#fff;">Upgrade your flight</a>
+    </div>
+  </div>
+</div>
+<!-- ULTIMATE LUXURY DIV ENDS HERE -->
+
+<!-- EXTRA BAGGAGE STARTS HERE -->
+<div class="container">
+  <div class="row extra">
+    <div class="col-md-6 col-sm-12 col-xs-12 extraLeft" data-aos="fade-right">
+      <h3 class="text-left" data-aos="fade-left">
+      Need <span style="border-bottom: 3px solid #f34444;">Extra</span> <span style="color: #f34444;">Badge</span></h3>
+     
+      <p>Carry your travel essential and more. Save upto 20% when you purchaseextra baggage online through our mobile app.</p>
+      <button id="showSidebarBtn" class="btn">Purchase extra baggage</button>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-left">
+      <div class="card extraCard">
+        <img src="../media/baggage-transformed.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="sidebar" class="sidebarBaggage" >
+  <button id="closeSidebarBtn" data-aos="fade-left"><i class="fa  fa-times-circle-o" style="background-color: transparent !important;color:  #fff;font-size: 20px;"></i></button>
+  <img src="../media/baggage-transformed.jpeg" width="100%" height="300px" alt="">
+  <div class="baggageContent p-4">
+  <h3>Extra baggage</h3>
+  <p>Save when you purchase extra baggage online.</p>
+  <form action="" method="post" style="text-align: center !important;">
+    <div class="mb-3">
+      <input type="number" class="form-control p-3" id="formGroupExampleInput" placeholder="No of Baggage" required min="1">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control p-3" id="formGroupExampleInput2" placeholder="Last name" required>
+    </div>
+    <button type="submit" class="btn" style="padding: 10px 40px;">Retrieve Baggage</button>
+  </form>
+  </div>
+</div>
+<!-- EXTRA BAGGAGE ENDS HERE -->
+<!-- Stoppage starts here -->
+<div class="container elevate-container div" style="margin-top: 100px;">
+  <div class="row">
+    <div class="col-lg-6" style="width: max-content;">
+    <h2 class="text-center heading" data-aos="fade-left">
+    While at Jinnah <span style="color: #f34444;">International Airport</span></h2>
+    </h2>
+    </div>
+    <p data-aos="fade-left" style="color:rgb(49, 49, 49); font-weight: 500;">
+    Comfort. Convenience. Choice. These are the things that matter most to today’s traveller, <br>
+    and you will find them all at Jinnah International Airport, home of Travel Agency.</p>
+  </div>
+  <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12" data-aos="fade-right">
+          <div class="card elevate-card" style="width: 100%;">
+              <img src="../media/dine_elevate-transformed.jpeg" width="100%" height="300px" class="card-img-top" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <h3 class="card-title">Dine and relax at one of our lounges</h3>
+                <p class="card-text">Lounge in comfort and let your body and mind absorb the elegant ambience of the lounges</p>
+                <button id="showSidebarBtn1" class="btn">Book Lounge access</button>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12" data-aos="fade-left">
+          <div class="card elevate-card" style="width: 100%;">
+              <img src="../media/fast_elevate-transformed.jpeg" width="100%" height="300px" class="card-img-top" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                <h3 class="card-title">Fast-track your way</h3>
+                <p class="card-text">Relax and let us take care of the formalities when departing, transiting or arriving at Jinnah International Airport</p>
+                <button id="showSidebarBtn2" class="btn">Book Lounge Services</button>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+<div id="sidebar1" class="sidebarBaggage1">
+  <button id="closeSidebarBtn1" data-aos="fade-left"><i class="fa  fa-times-circle-o" style="background-color: transparent !important;color:  #fff;font-size: 20px;"></i></button>
+  <img src="../media/dine_elevate-transformed.jpeg" width="100%" height="300px" alt="">
+  <div class="baggageContent1 p-4">
+  <h3>Lounge access</h3>
+  <p>Dine and relax at one of world-class lounges</p>
+  <form action="" method="post" style="text-align: center !important;">
+    <div class="mb-3">
+      <input type="number" class="form-control p-3" id="formGroupExampleInput" placeholder="No of Person" required min="1">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control p-3" id="formGroupExampleInput2" placeholder="Last name" required>
+    </div>
+    <a href="https://www.loungebuddy.com/KHI?filters=%7B%22tempClosed.0%22%3A%22open%22%7D" class="btn" style="padding: 10px 40px;">Retrieve Booking</a>
+  </form>
+  </div>
+</div>
+<div id="sidebar2" class="sidebarBaggage2">
+  <button id="closeSidebarBtn2" data-aos="fade-left"><i class="fa  fa-times-circle-o" style="background-color: transparent !important;color:  #fff;font-size: 20px;"></i></button>
+  <img src="../media/fast_elevate-transformed.jpeg" width="100%" height="300px" alt="" style="object-fit: cover;">
+  <div class="baggageContent2 p-4">
+  <h3>Lounge Service</h3>
+  <p>Fast track your way through Jinnah International Airport.</p>
+  <form action="" method="post" style="text-align: center !important;">
+    <div class="mb-3">
+      <input type="number" class="form-control p-3" id="formGroupExampleInput" placeholder="No of Person" required min="1">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control p-3" id="formGroupExampleInput2" placeholder="Last name" required>
+    </div>
+    <a href="https://www.dnata.com/en/ground-handling/passenger-services/marhaba-services" class="btn" style="padding: 10px 40px;">Retrieve booking</a>
+  </form>
+  </div>
+</div>
+<!-- stoppage ends here -->
+<!-- MORE FOR YOU AND OTHER STARTS HERE -->
+<div class="container elevate-container div" style="margin-top: 100px;">
+  <div class="row">
+    <h2 class="text-center heading" data-aos="fade-left">
+    More For You, Or Pehaps <span style="color: #f34444;">For The Little Ones</span></h2>
+    </div>
+    <div class="row" style="height: 300px;">
+      <div class="col-md-4 moreCol" data-aos="fade-up">
+        <div class="moreCard">
+          <img src="../media/for,elevate.jpg" width="100%" alt="" style="object-fit: cover;">
+          <div class="moreBody" style="object-fit: cover;">
+          <h3>Stay connected on board</h3>
+          <button id="showSidebarBtn3" class="btn" style="color:#fff">Purchase onboard wifi <i class="fa fa-arrow-right"></i></button>
+        </div>
+        </div>
+       </div>
+       <div class="col-md-4 moreCol" data-aos="fade-up">
+        <div class="moreCard">
+          <img src="../media/for1,elevate.jpg" width="100%" alt="" style="object-fit: cover;">
+          <div class="moreBody" style="object-fit: cover;" >
+          <h3>Your peace of mind</h3>
+          <button id="showSidebarBtn4" class="btn" style="color:#fff;">Purchase travel insurance <i class="fa fa-arrow-right"></i></button>
+        </div>
+        </div>
+       </div>
+       <div class="col-md-4 moreCol" data-aos="fade-up">
+        <div class="moreCard">
+          <img src="../media/for3,elevate.jpg" width="100%" alt="" style="object-fit: cover;">
+          <div class="moreBody" style="object-fit: cover;">
+          <h3>Hotels in Karachi</h3>
+          <a href="hotel.html" class="btn" style="color:#fff">Book a short stay<i class="fa fa-arrow-right"></i></a>
+        </div>
+        </div>
+       </div>
+    </div>
+    </div>
+    <div id="sidebar3" class="sidebarBaggage3">
+      <button id="closeSidebarBtn3" data-aos="fade-left"><i class="fa  fa-times-circle-o" style="background-color: transparent !important;color:  #fff;font-size: 20px;"></i></button>
+      <img src="../media/for,elevate.jpg" width="100%" height="300px" alt="" style="object-fit: cover;">
+      <div class="baggageContent3 p-4">
+      <h3>Access super Wi-Fi on board</h3>
+      <p>Enjoy high-speed connectivity during your journey</p>
+      <form action="" method="post" style="text-align: center !important;">
+        <div class="mb-3">
+          <input type="number" class="form-control p-3" id="formGroupExampleInput" placeholder="Your name" required min="1">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control p-3" id="formGroupExampleInput2" placeholder="Your email" required>
+        </div>
+        <a href="" class="btn" style="padding: 10px 40px;color:#fff;">Retrieve Booking</a>
+      </form>
+      </div>
+    </div>
+
+    <div id="sidebar4" class="sidebarBaggage4">
+      <button id="closeSidebarBtn4" data-aos="fade-left"><i class="fa  fa-times-circle-o" style="background-color: transparent !important;color:  #fff;font-size: 20px;"></i></button>
+      <img src="../media/sidebar4,elevate.jpg" width="100%" height="300px" alt="" style="object-fit: cover;">
+      <div class="baggageContent4 p-4">
+      <h3>Travel Insurance</h3>
+      <p>Enjoy peace of ind during your journey with travel insurance</p>
+      <form action="" method="post" style="text-align: center !important;">
+        <div class="mb-3">
+          <input type="number" class="form-control p-3" id="formGroupExampleInput" placeholder="Booking reference" required min="1">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control p-3" id="formGroupExampleInput2" placeholder="Last name" required>
+        </div>
+        <a href="" class="btn" style="padding: 10px 40px;">Retrieve Booking</a>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  MORE FOR YOU AND OTHER ENDS HERE-->
+
+<!-- Footer Start  -->
+<footer class="footer">
+    <style>
+        @media screen and (max-width: 770px) {
+    .footer {
+       margin-top: 350px;
+    }
+}
+    </style>
+  
+  <div class="row">
+    <div class="col" id="col1">
+      <img src="../media/Tour 1 (2).png" alt="Travel Agency!">
+      <style>
+         #col1 p {
+             font-size: 12px;
+             font-weight: 500;
+         }
+     </style>
+      <p>Travel Agency is the ultimate travel agency website that takes you on unforgettable adventures. Explore the world with our expertly crafted itineraries. Discover hidden gems, indulge in local cuisines, and make lifelong memories.Whether you're solo traveller or with loved ones, Travel Agency has the perfect package for you. Lets embark on a journey together!</p>
+    </div>
+    <div class="col" id="col2">
+      <h2>
+        Office<div class="underline"><span></span>
+    </h2>
+    <ul>
+        <li><i class="fa-solid fa-location-dot" style="margin-top: 10px;"></i> Garden City Block/A</li>
+        <li><i class="fa-solid fa-map-location-dot"></i> Karachi, PAKISTAN</li>
+<li><i class="fa-solid fa-envelope"></i> Travel Agency@gmail.com</li>
+<li><i class="fa-solid fa-phone"></i> 0900 786 01</li>
+    </ul>
+    </div>
+    <div class="col" id="col3">
+      <h2>Links<div class="underline"><span></span></h2>
+     
+      <ul>
+        <li><a href="../index.html"><i class="fa-solid fa-arrow-right" style="margin-top: 10px;"></i> Home</a></li>
+        <li><a href="../html Files/contactus.html"><i class="fa-solid fa-arrow-right"></i> Contact Us</a></li>
+        <li><a href="../html Files/destinations.html"><i class="fa-solid fa-arrow-right"></i> Destinations</a></li>
+        <li><a href="../html Files/flight.html"><i class="fa-solid fa-arrow-right"></i> Reservation</a></li>
+    </ul>
+    </div>
+    <div class="col" id="col4">
+      <h2>Destination <div class="underline"><span></span></h2>
+      <div class="images">
+        <div class="row" data-aos="fade-right" style="margin-bottom: 0px;">
+          <img src="../media/des1.jpg" alt="Loading!" class="img-1" />
+          <img src="../media/des2.jpg" alt="Loading!" class="img-2" />
+          <img src="../media/des3.jpg" alt="Loading!" class="img-3" />
+          <img src="../media/des4.jpg" alt="Loading!" class="img-4" />
+          <img src="../media/des5.jpg" alt="Loading!" class="img-5" />
+        </div>
+        <div class="row" data-aos="fade-left">
+          <img src="../media/des6.jpg" alt="Loading!" class="img-6" />
+          <img src="../media/des7.jpg" alt="Loading!" class="img-7" />
+          <img src="../media/des8.jpg" alt="Loading!" class="img-8" />
+          <img src="../media/des9.jpg" alt="Loading!" class="img-9" />
+          <img src="../media/des10.jpg" alt="Loading!" class="img-10" />
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+  <hr style="color: white; border-top: 8px;">
+  <div class="last">
+    <p class="copyright">SOF © 2022 - All Right Reserved</p>
+    <div class="icons">
+      <ul class="wrapper2">
+        <a href="https://www.facebook.com/login/">
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+          </li>
+        </a>
+        <a href="https://twitter.com/i/flow/login">
+          <li class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+          </li>
+        </a>
+        <a href="https://www.instagram.com/accounts/login/">
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+          </li>
+        </a>
+        <a href="https://github.com/login">
+          <li class="icon github">
+            <span class="tooltip">Github</span>
+            <span><i class="fa-brands fa-github"></i></span>
+          </li>
+        </a>
+        <a href="https://www.youtube.com/"></a>
+          <li class="icon youtube">
+            <span class="tooltip">Youtube</span>
+            <span><i class="fa-brands fa-youtube"></i></span>
+          </li>
+        </a>
+        </ul>
+    </div>
+</div>
+</footer>
+  <!-- <- Footer End -> -->
+  <!-- Loader Start -->
+      <div class="loader-wrapper" id="loader-wrapper">
+        <div class="loader" id="load">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+  <!-- Loader End -->
+
+
+  <!-- <.-------------------------------------------- // PAGE END \\ ----------------------------------------.> -->
+
+  <!-- JavaScript Link  -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/javascript.js"></script>
+  <script src="https://kit.fontawesome.com/60229d941c.js" crossorigin="anonymous"></script>
+  <!-- TAB BAR -->
+  <!-- jQuery UI JavaScript -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"></script>
+  <!-- AOS ANIMATION -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Typed Js Link  -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- JQUERY AJAX -->
+  <!-- Include Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.js"></script>
+  <!-- Jquery  -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script>
+   function initializeAOS() {
+            if (window.innerWidth > 768) { // Adjust the screen width threshold as needed
+                AOS.init(); // Initialize AOS if screen width is larger than 768px
+            } else {
+                // Disable AOS animations for smaller screens
+                const aosElements = document.querySelectorAll('[data-aos]');
+                aosElements.forEach(element => {
+                    element.removeAttribute('data-aos');
+                });
+            }
+        }
+
+        // Call the function to initialize or disable AOS animations
+        initializeAOS();
+
+        // You can also listen for window resize events to recheck and update AOS as needed
+        window.addEventListener('resize', initializeAOS);
+  // Loader Js --->
+  $(window).on("load", function() {
+    $(".loader-wrapper").fadeOut();
+  });
+
+   $(document).ready(function() {
+  var activeSidebar = null;
+  // Toggle sidebar visibility on button click
+  function toggleSidebar(sidebar) {
+    if (activeSidebar !== sidebar) {
+      if (activeSidebar !== null) {
+        activeSidebar.removeClass("active");
+      }
+      sidebar.toggleClass("active");
+      activeSidebar = sidebar;
+    } else {
+      sidebar.removeClass("active");
+      activeSidebar = null;
+    }
+  }
+
+  // Attach click handlers to show buttons
+  $("#showSidebarBtn").click(function() {
+    toggleSidebar($(".sidebarBaggage"));
+  });
+
+  $("#showSidebarBtn1").click(function() {
+    toggleSidebar($(".sidebarBaggage1"));
+  });
+
+  $("#showSidebarBtn2").click(function() {
+    toggleSidebar($(".sidebarBaggage2"));
+  });
+
+  $("#showSidebarBtn3").click(function() {
+    toggleSidebar($(".sidebarBaggage3"));
+  });
+
+  $("#showSidebarBtn4").click(function() {
+    toggleSidebar($(".sidebarBaggage4"));
+  });
+
+  // Close sidebar on close button click
+  $("#closeSidebarBtn i").click(function() {
+    $(this).closest(".sidebarBaggage").removeClass("active");
+    activeSidebar = null;
+  });
+
+  $("#closeSidebarBtn1 i").click(function() {
+    $(this).closest(".sidebarBaggage1").removeClass("active");
+    activeSidebar = null;
+  });
+
+  $("#closeSidebarBtn2 i").click(function() {
+    $(this).closest(".sidebarBaggage2").removeClass("active");
+    activeSidebar = null;
+  });
+
+  $("#closeSidebarBtn3 i").click(function() {
+    $(this).closest(".sidebarBaggage3").removeClass("active");
+    activeSidebar = null;
+  });
+
+  $("#closeSidebarBtn4 i").click(function() {
+    $(this).closest(".sidebarBaggage4").removeClass("active");
+    activeSidebar = null;
+  });
+});
+
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+.awardContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 20px !important;
+  }
+  .awardContainer img{
+    border-radius: 20px !important;
+  }
+  .top-left {
+    position: absolute;
+    top: 40%;
+    left: 40px;
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    text-align: justify;
+  
+  }
+  .container{
+    margin-top: 80px !important;
+  }
+  .awardContainer h1{
+    font-size: 36px;
+    font-weight: 400;
+  }
