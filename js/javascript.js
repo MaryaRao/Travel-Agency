@@ -230,5 +230,5 @@ window.addEventListener('load', function () {
   document.body.style.overflow = 'hidden';
   setTimeout(function() {
     document.body.style.overflow = 'auto';
-}, 2000);
+}, 1000);
 });

@@ -39,26 +39,25 @@
   </a>
 
   <!-- <...Header Start...>  -->
-  <header class="header" id="header">
-    <div class="left">
-      <span style="border-right: 1px solid gainsboro;"><a href="mailto:abc@gmail.com" class="signin"><i
-            class="fa fa-envelope fa-bounce" style="color: #f34444;"></i>
-          Travel Agency@gmail.com</a></span>
-      <span style="border-right: 1px solid gainsboro;"><a href="tel:090078601" class="signin"><i
-            class="fa fa-phone fa-shake" style="color: #f34444;"></i>&nbsp;
-          0900 786 01</a></span>
-      <span><a href="https://goo.gl/maps/MkTaRpcWMG5gzh8G6" class="signin"><i class="fa fa-location fa-spin"
-            style="color: #f34444;"></i>
-          Karachi, Sindh, Pakistan</a></span>
+   <header class="header" id="header">
+      <div class="left">
+        <span style="border-right: 1px solid gainsboro;"><a href="mailto:abc@gmail.com" class="signin"><i
+                    class="fa fa-envelope fa-bounce" style="color: #f34444;"></i>
+                Travel Agency@gmail.com</a></span>
+        <span style="border-right: 1px solid gainsboro;"><a href="tel:090078601" class="signin"><i class="fa fa-phone fa-shake"
+                    style="color: #f34444;"></i>&nbsp;
+                0900 786 01</a></span>
+        <span><a href="https://goo.gl/maps/MkTaRpcWMG5gzh8G6" class="signin"><i class="fa fa-location fa-spin" style="color: #f34444;"></i>
+                Karachi, Sindh, Pakistan</a></span>
     </div>
     <div class="right">
       <span style="border-right: 1px solid gainsboro;"><a href="https://www.facebook.com/login.php" class="signin fb">
-          <i class="fa fa-facebook"></i></a></span>
+      <i class="fa fa-facebook"></i></a></span>
       <span style="border-right: 1px solid gainsboro;"><a href="https://www.instagram.com/" class="signin inst">
-          <i class="fa fa-instagram"></i></a></span>
+      <i class="fa fa-instagram"></i></a></span>
       <span><a href="https://twitter.com/i/flow/login" class="signin tw"><i class="fa fa-twitter"></i></a></span>
     </div>
-  </header>
+    </header>
   <!-- <...Header End...> -->
 
   <!-- <...Navbar Start...>  -->
@@ -130,6 +129,10 @@
     .caro-content p {
       color: #fff;
     }
+    
+    .logo {
+        left: -20px;
+    }
   </style>
   <div class="carousel1">
     <div class="caro-content">
@@ -146,7 +149,7 @@
           Business Class for the tenth time, as well as World's Best Business Class Lounge, World's Best Business Class
           Lounge Dining and Best Airline in the Middle East.</p>
         <p style="color: #000;font-weight: 100;font-size: 20px;">Thank you for voting for us. </p>
-        <a href="./flight.html" class="btn">Search Flights</a>
+        <a href="./flight.html" class="btn btn-primary" style="color: #fff;background: #f34444;outline:none;box-shadow: none;border: 1px solid #f34444;">Search Flights</a>
       </div>
       <div class="col-md-8"
         style="background-image: url(../media/sky-awards.png); height: 300px;background-size: cover;background-position: center;background-repeat: no-repeat;border-radius:20px ;">
@@ -154,23 +157,38 @@
       </div>
     </div>
   </div>
-  <div class="container awardContainer">
+  <div class="container awardContainer" id="class">
     <img src="../media/business_class.jpg" alt="Snow" style="width:100%;">
     <h1 class="top-left">World's Best <br>Business Class</h1>
   </div>
-  <div class="container awardContainer">
-    <img src="../media/business_class_Lounge.jpg" alt="Snow" style="width:100%;">
+  <style>
+      @media(max-width:768px){
+        #class{
+          visibility: hidden;
+        }
+          .awardContainer{
+            position: relative;
+            top: 30px;
+          }
+          h1.top-left{
+            font-size: 20px;
+          }
+         
+      }
+  </style>
+  <div class="container awardContainer" id="lounge">
+    <img src="../media/business_class_Lounge.jpg" alt="Snow" style="width:100%;object-fit: cover">
     <h1 class="top-left">World's Best <br>Business Class Lounge</h1>
   </div>
-  <div class="container awardContainer">
-    <img src="../media/business_class_2.jpeg" alt="Snow" style="width:100%;" height="400px">
-    <h1 class="top-left">World's Best <br>Business Class Lounge</h1>
+  <div class="container awardContainer" id="food">
+    <img src="../media/business_class_2.jpeg" alt="Snow" style="width:100%;object-fit: cover;" height="400px">
+    <h1 class="top-left">World's Best <br>Business Class Food</h1>
   </div>
-  <div class="container awardContainer">
-    <img src="../media/business_class_3.jpeg" alt="Snow" style="width:100%;" height="400px">
+  <div class="container awardContainer" id="asia">
+    <img src="../media/business_class_3.jpeg" alt="Snow" style="width:100%;object-fit: cover" height="400px">
     <h1 class="top-left">Best Airline <br>in South Asia</h1>
   </div>
-  <!-- Footer Start  -->
+    <!-- Footer Start  -->
   <footer class="footer" style="margin-top: 100px;">
 
     <div class="row">
@@ -208,6 +226,11 @@
       <div class="col" id="col4">
         <h2>Destination <div class="underline"><span></span></h2>
         <div class="images">
+            <style>
+                footer .images .row img{
+                cursor:default;
+                }
+            </style>
           <div class="row" data-aos="fade-right" style="margin-bottom: 0px;">
             <img src="../media/des1.jpg" alt="Loading!" class="img-1" />
             <img src="../media/des2.jpg" alt="Loading!" class="img-2" />
@@ -289,7 +312,23 @@
   <!-- AOS ANIMATION -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+      function initializeAOS() {
+            if (window.innerWidth > 768) { // Adjust the screen width threshold as needed
+                AOS.init(); // Initialize AOS if screen width is larger than 768px
+            } else {
+                // Disable AOS animations for smaller screens
+                const aosElements = document.querySelectorAll('[data-aos]');
+                aosElements.forEach(element => {
+                    element.removeAttribute('data-aos');
+                });
+            }
+        }
+
+        // Call the function to initialize or disable AOS animations
+        initializeAOS();
+
+        // You can also listen for window resize events to recheck and update AOS as needed
+        window.addEventListener('resize', initializeAOS);
     // Loader Js --->
     $(window).on("load", function() {
     $(".loader-wrapper").fadeOut();

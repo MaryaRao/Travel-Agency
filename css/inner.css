@@ -90,6 +90,16 @@
     line-height: 25px;
     cursor: pointer;
 }
+.card-body a:hover {
+  color: white !important;  
+  background-color: #f34444;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card-group .card .card-title {
+  opacity: 1; /* Set the initial opacity to 1 to make the title visible */
+  visibility: visible; /* Ensure the title is visible */
+}
 
 .card-body p {
     font-size: 14px;

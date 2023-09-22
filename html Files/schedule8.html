@@ -60,7 +60,7 @@
       <div class="left">
         <span style="border-right: 1px solid gainsboro;"><a href="mailto:abc@gmail.com" class="signin"><i
                     class="fa fa-envelope fa-bounce" style="color: #f34444;"></i>
-                Travel Agency@gmail.com</a></span>
+                tourice@gmail.com</a></span>
         <span style="border-right: 1px solid gainsboro;"><a href="tel:090078601" class="signin"><i class="fa fa-phone fa-shake"
                     style="color: #f34444;"></i>&nbsp;
                 0900 786 01</a></span>
@@ -406,14 +406,14 @@
 <footer class="footer" style="margin-top: 100px;">
     <div class="row">
       <div class="col" id="col1">
-        <img src="../media/Tour 1 (2).png" alt="Travel Agency!">
+        <img src="../media/Tour 1 (2).png" alt="TOURICE!">
         <style>
          #col1 p {
              font-size: 12px;
              font-weight: 500;
          }
      </style>
-      <p>Travel Agency is the ultimate travel agency website that takes you on unforgettable adventures. Explore the world with our expertly crafted itineraries. Discover hidden gems, indulge in local cuisines, and make lifelong memories.Whether you're solo traveller or with loved ones, Travel Agency has the perfect package for you. Lets embark on a journey together!</p>
+      <p>Tourice is the ultimate travel agency website that takes you on unforgettable adventures. Explore the world with our expertly crafted itineraries. Discover hidden gems, indulge in local cuisines, and make lifelong memories.Whether you're solo traveller or with loved ones, Tourice has the perfect package for you. Lets embark on a journey together!</p>
       </div>
       <div class="col" id="col2">
         <h2>
@@ -422,7 +422,7 @@
       <ul>
           <li><i class="fa-solid fa-location-dot" style="margin-top: 10px;"></i> Garden City Block/A</li>
           <li><i class="fa-solid fa-map-location-dot"></i> Karachi, PAKISTAN</li>
-  <li><i class="fa-solid fa-envelope"></i> Travel Agency@gmail.com</li>
+  <li><i class="fa-solid fa-envelope"></i> tourice@gmail.com</li>
   <li><i class="fa-solid fa-phone"></i> 0900 786 01</li>
       </ul>
       </div>
@@ -522,7 +522,23 @@
 <!-- Jquery  -->
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 <script>
-  AOS.init();
+    function initializeAOS() {
+            if (window.innerWidth > 768) { // Adjust the screen width threshold as needed
+                AOS.init(); // Initialize AOS if screen width is larger than 768px
+            } else {
+                // Disable AOS animations for smaller screens
+                const aosElements = document.querySelectorAll('[data-aos]');
+                aosElements.forEach(element => {
+                    element.removeAttribute('data-aos');
+                });
+            }
+        }
+
+        // Call the function to initialize or disable AOS animations
+        initializeAOS();
+
+        // You can also listen for window resize events to recheck and update AOS as needed
+        window.addEventListener('resize', initializeAOS);
   // Loader Js --->
   setTimeout(function () {
     $(".loader-wrapper").fadeOut();
